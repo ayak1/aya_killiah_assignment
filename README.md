@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# UAE ID Card Extractor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The **UAE ID Card Extractor** is a React component that uses Optical Character Recognition (OCR) to extract and display information from UAE ID cards. This component leverages Tesseract.js to perform OCR on uploaded images, processes the extracted text to identify and clean relevant information, and presents it in an editable form.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Image Upload**: Allows users to upload an image of a UAE ID card.
+- **OCR Processing**: Utilizes Tesseract.js for OCR to recognize text from the image.
+- **Data Extraction**: Automatically extracts and corrects information such as ID Number, Name, Date of Birth, Nationality, Issued Date, Expiry Date, and Sex.
+- **Editable Fields**: Displays extracted data in form fields that users can edit.
+- **Loading Indicator**: Provides visual feedback during the OCR process.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone the repository**:
 
-### `npm test`
+    ```bash
+    git clone https://github.com/ayak1/aya_killiah_assignment.git
+    cd uae-id-card-extractor
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies**:
 
-### `npm run build`
+    ```bash
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Run the application**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    The application will start and be available at `http://localhost:3000`.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Upload Image**: Click on the file input to upload an image of a UAE ID card. The image should be clear and contain all necessary details.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Processing**: Once the image is uploaded, the OCR process will begin, and a loading indicator will be displayed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Review and Edit**: After processing, the extracted data will be displayed in form fields. Review the data and make any necessary edits.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Styling**: Customize the styling of the component by modifying `IdCardExtractor.css`.
 
-## Learn More
+## Component Details
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **`IdCardExtractor` Component**:
+  - Handles image upload and OCR processing.
+  - Displays a loading overlay during processing.
+  - Shows extracted data in an editable form.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Dependencies**:
+  - `react` and `react-dom` for building the user interface.
+  - `tesseract.js` for OCR functionality.
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are welcome! Please follow the project's guidelines for submitting issues or pull requests.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the MIT License.
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For any inquiries or further information, please contact:
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Author**: [Aya Killiah]
