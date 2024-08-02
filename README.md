@@ -18,7 +18,7 @@ The **UAE ID Card Extractor** is a React component that uses Optical Character R
 
     ```bash
     git clone https://github.com/ayak1/aya_killiah_assignment.git
-    cd uae-id-card-extractor
+    cd aya_killiah_assignment
     ```
 
 2. **Install dependencies**:
